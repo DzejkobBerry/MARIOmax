@@ -81,21 +81,54 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
       description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     }
   ],
+  bouwunits: [
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit1.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit2.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit3.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit4.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit5.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit6.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    },
+    {
+      imageUrl: "/images/bouw-van-bouwunits/bouwunit7.jpg",
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
+    }
+  ],
   general: [
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
       title: "Houtconstructies",
       description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
-    {
-      imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Bouw van bouwunits",
-      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
-    },
+
     {
       imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Vensterbanken",
-      description: "Natuursteen vensterbanken op maat geplaatst in Haarlem"
+      title: "Montage van gevelplanken",
+      description: "Professionele montage van houten gevelplanken voor een duurzame en stijlvolle afwerking."
     }
   ]
 };
