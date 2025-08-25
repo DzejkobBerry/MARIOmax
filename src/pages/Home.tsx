@@ -5,6 +5,7 @@ import { TestimonialCard } from '../components/TestimonialCard';
 import { ContactForm } from '../components/ContactForm';
 import { GalleryCard } from '../components/GalleryCard';
 import { GalleryModal } from '../components/GalleryModal';
+import { ScrollToTop } from '../components/ScrollToTop';
 
 export function Home() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -52,6 +53,9 @@ export function Home() {
           onClose={closeModal}
           imageData={selectedImage}
         />
+        
+        {/* Scroll to Top Button */}
+        <ScrollToTop />
       </section>
 
       {/* About Section */}
