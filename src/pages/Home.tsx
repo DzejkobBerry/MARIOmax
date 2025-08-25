@@ -153,6 +153,29 @@ export function Home() {
               </div>
             </div>
           </div>
+          
+          {/* Call to Action Banner */}
+          <div className="mt-16 text-center">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+              <div className="absolute inset-0 bg-black/10"></div>
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Klaar om te beginnen?
+                </h3>
+                <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                  Laat uw droomproject werkelijkheid worden met MARIOmax
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="tel:+31618793375" className="bg-white text-blue-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                    📞 Bel Nu Direct
+                  </a>
+                  <a href="mailto:contact@mariomax.nl" className="bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-white/20">
+                    ✉️ Stuur E-mail
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -467,68 +490,118 @@ export function Home() {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">
-              Neem Contact Op
-            </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Heeft u een project in gedachten? Neem vrijblijvend contact met ons
-              op voor een persoonlijk advies en offerte op maat.
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-blue-300/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-400/20 rounded-full blur-lg animate-bounce delay-500"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-block">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 relative">
+                Neem Contact Op
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full"></div>
+              </h2>
+            </div>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Heeft u een project in gedachten? Neem vrijblijvend contact met ons op voor een 
+              <span className="font-semibold text-blue-700">persoonlijk advies</span> en 
+              <span className="font-semibold text-blue-700">offerte op maat</span>.
             </p>
+            <div className="mt-8 flex justify-center space-x-4">
+              <div className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-blue-100">
+                <span className="text-blue-700 font-medium">✓ Gratis advies</span>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-blue-100">
+                <span className="text-blue-700 font-medium">✓ Snelle reactie</span>
+              </div>
+              <div className="bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-blue-100">
+                <span className="text-blue-700 font-medium">✓ Vakmanschap</span>
+              </div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <ContactForm />
-            </div>
-            <div className="space-y-6">
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <div className="flex items-center mb-4">
-                  <Phone className="text-blue-600 mr-3" size={24} />
-                  <h3 className="text-xl font-semibold text-gray-800">Telefoon</h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="order-2 lg:order-1">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-blue-100">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Stuur ons een bericht</h3>
+                  <p className="text-gray-600">We nemen binnen 24 uur contact met u op</p>
                 </div>
-                <p className="text-gray-600">+31 6 18 79 33 75</p>
-                <p className="text-sm text-gray-500 mt-1">
-                  Bereikbaar van maandag t/m vrijdag van 08:00 - 18:00
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <div className="flex items-center mb-4">
-                  <Mail className="text-blue-600 mr-3" size={24} />
-                  <h3 className="text-xl font-semibold text-gray-800">E-mail</h3>
-                </div>
-                <p className="text-gray-600">contact@mariomax.nl</p>
-                <p className="text-sm text-gray-500 mt-1">
-                  Wij reageren binnen 24 uur op uw e-mail
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <div className="flex items-center mb-4">
-                  <MapPin className="text-blue-600 mr-3" size={24} />
-                  <h3 className="text-xl font-semibold text-gray-800">Locatie</h3>
-                </div>
-                <p className="text-gray-600">Zaandam en omgeving</p>
-                <p className="text-sm text-gray-500 mt-1">
-                  Werkzaam binnen een straal van 100 km
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38394.49932861029!2d4.7886!3d52.4389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5fb4b7c3b8b1d%3A0x2b3b4b4b4b4b4b4b!2sZaandam!5e0!3m2!1snl!2snl!4v1234567890123" 
-                  width="100%" 
-                  height="200" 
-                  style={{
-                    border: 0
-                  }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                  title="MARIOmax location" 
-                  className="rounded-lg"
-                ></iframe>
+                <ContactForm />
               </div>
             </div>
+            <div className="space-y-4 order-1 lg:order-2">
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100 group hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-gradient-to-br from-blue-500 to-blue-700 p-3 rounded-xl mr-3 group-hover:scale-110 transition-transform duration-300">
+                      <Phone className="text-white" size={24} />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800 group-hover:text-blue-700 transition-colors duration-300">Telefoon</h3>
+                      <p className="text-gray-500 text-sm">Direct contact</p>
+                    </div>
+                  </div>
+                  <p className="text-lg font-semibold text-gray-700 mb-2">+31 6 18 79 33 75</p>
+                  <p className="text-gray-600 bg-blue-50 px-3 py-2 rounded-lg text-sm">
+                    📞 Bereikbaar van maandag t/m vrijdag van 08:00 - 18:00
+                  </p>
+                </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100 group hover:scale-105">
+                   <div className="flex items-center mb-4">
+                     <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-3 rounded-xl mr-3 group-hover:scale-110 transition-transform duration-300">
+                       <Mail className="text-white" size={24} />
+                     </div>
+                     <div>
+                       <h3 className="text-xl font-bold text-gray-800 group-hover:text-blue-700 transition-colors duration-300">E-mail</h3>
+                       <p className="text-gray-500 text-sm">Schriftelijk contact</p>
+                     </div>
+                   </div>
+                   <p className="text-lg font-semibold text-gray-700 mb-2">contact@mariomax.nl</p>
+                   <p className="text-gray-600 bg-blue-50 px-3 py-2 rounded-lg text-sm">
+                     ⚡ Wij reageren binnen 24 uur op uw e-mail
+                   </p>
+                 </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100 group hover:scale-105">
+                   <div className="flex items-center mb-4">
+                     <div className="bg-gradient-to-br from-blue-400 to-blue-600 p-3 rounded-xl mr-3 group-hover:scale-110 transition-transform duration-300">
+                       <MapPin className="text-white" size={24} />
+                     </div>
+                     <div>
+                       <h3 className="text-xl font-bold text-gray-800 group-hover:text-blue-700 transition-colors duration-300">Werkgebied</h3>
+                       <p className="text-gray-500 text-sm">Onze locatie</p>
+                     </div>
+                   </div>
+                   <p className="text-lg font-semibold text-gray-700 mb-2">Zaandam en omgeving</p>
+                   <p className="text-gray-600 bg-blue-50 px-3 py-2 rounded-lg text-sm">
+                     🚗 Werkzaam binnen een straal van 100 km
+                   </p>
+                 </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100 group">
+                  <div className="mb-3">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Vind ons op de kaart</h4>
+                  </div>
+                  <div className="relative overflow-hidden rounded-xl group-hover:scale-105 transition-transform duration-300">
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38394.49932861029!2d4.7886!3d52.4389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5fb4b7c3b8b1d%3A0x2b3b4b4b4b4b4b4b!2sZaandam!5e0!3m2!1snl!2snl!4v1234567890123" 
+                      width="100%" 
+                      height="180" 
+                      style={{
+                        border: 0
+                      }} 
+                      allowFullScreen 
+                      loading="lazy" 
+                      title="MARIOmax location" 
+                      className="rounded-xl"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </section>

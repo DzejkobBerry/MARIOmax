@@ -1,6 +1,6 @@
 import React from 'react';
-import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
-export function Footer() {
+import { Facebook, Instagram, MessageCircle, Phone, Mail, MapPin } from 'lucide-react';
+function Footer() {
   return <footer className="bg-gray-800 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -19,6 +19,9 @@ export function Footer() {
               </a>
               <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">
                 <Instagram size={20} />
+              </a>
+              <a href="#" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
@@ -79,10 +82,19 @@ export function Footer() {
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} MARIOmax. Alle rechten
-            voorbehouden.
+            &copy; {new Date().getFullYear()} MARIOmax. Alle rechten voorbehouden. | Ontworpen door{' '}
+            <a 
+              href="https://bloompixel.pl" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors underline"
+            >
+              bloompixel.pl
+            </a>
           </p>
         </div>
       </div>
     </footer>;
 }
+
+export { Footer };
