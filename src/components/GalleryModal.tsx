@@ -135,6 +135,13 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
       description: "Professionele montage van houten gevelplanken voor een duurzame en stijlvolle afwerking."
     }
   ],
+  andere: [
+    {
+      imageUrl: "/images/andere-werken/andere1.jpg",
+      title: "Andere werken",
+      description: "Schilderen van muren en ramen, en leggen van vloerpanelen"
+    }
+  ],
   general: [
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",

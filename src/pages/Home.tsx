@@ -54,10 +54,11 @@ export function Home() {
           imageData={selectedImage}
           category={
             selectedImage?.title === 'Houtconstructies' ? 'houtconstructies' :
-            selectedImage?.title === 'Andere werken' ? 'isolatie' :
+            selectedImage?.title === 'Andere werken' ? 'andere' :
             selectedImage?.title === 'PVC-vloeren op terrassen' ? 'pvc' :
             selectedImage?.title === 'Bouw van bouwunits' ? 'bouwunits' :
             selectedImage?.title === 'Montage van gevelplanken' ? 'gevelplanken' :
+            selectedImage?.title === 'Isolatie en houtconstructies' ? 'isolatie' :
             'general'
           }
         />
@@ -262,12 +263,12 @@ export function Home() {
             
             <GalleryCard 
               imageUrl="/images/isolatie-houtconstructies/isolatie1.jpg"
-              title="Andere werken"
-              description="Schilderen van muren en ramen, en leggen van vloerpanelen"
+              title="Isolatie en houtconstructies"
+              description="Isolatie en houtconstructies voor gevelbekleding met houten planken."
               onClick={() => handleImageClick({
                 imageUrl: "/images/isolatie-houtconstructies/isolatie1.jpg",
-                title: "Andere werken",
-                description: "Schilderen van muren en ramen, en leggen van vloerpanelen"
+                title: "Isolatie en houtconstructies",
+                description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
               })}
             />
             
@@ -304,13 +305,13 @@ export function Home() {
               })}
             />
             <GalleryCard 
-              imageUrl="/images/isolatie-houtconstructies/isolatie1.jpg"
-              title="Isolatie en houtconstructies"
-              description="Isolatie en houtconstructies voor gevelbekleding met houten planken."
+              imageUrl="/images/andere-werken/andere1.jpg"
+              title="Andere werken"
+              description="Schilderen van muren en ramen, en leggen van vloerpanelen"
               onClick={() => handleImageClick({
-                imageUrl: "/images/isolatie-houtconstructies/isolatie1.jpg",
-                title: "Isolatie en houtconstructies",
-                description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
+                imageUrl: "/images/andere-werken/andere1.jpg",
+                title: "Andere werken",
+                description: "Schilderen van muren en ramen, en leggen van vloerpanelen"
               })}
             />
           </div>
