@@ -83,7 +83,7 @@ export function GalleryModal({ isOpen, onClose, imageData }: GalleryModalProps) 
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 hover:bg-gray-100 rounded-full transition-colors text-gray-600 hover:text-gray-800"
           >
             <X size={24} />
           </button>
