@@ -3,11 +3,31 @@ import { Menu, X, Phone, Mail } from 'lucide-react';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
   
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 50);
+      
+      // Get all sections
+      const sections = ['home', 'about', 'services', 'gallery', 'testimonials', 'contact'];
+      const sectionElements = sections.map(id => document.getElementById(id)).filter(Boolean);
+      
+      // Find which section is currently in view
+      let currentSection = 'home';
+      for (let i = sectionElements.length - 1; i >= 0; i--) {
+        const section = sectionElements[i];
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 100) {
+            currentSection = section.id;
+            break;
+          }
+        }
+      }
+      
+      setActiveSection(currentSection);
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -46,39 +66,63 @@ export function Header() {
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li>
-                <a href="#home" className="relative text-blue-700 font-medium px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50">
+                <a href="#home" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 ${
+                  activeSection === 'home' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Home
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'home' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
               <li>
-                <a href="#about" className="relative text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group">
+                <a href="#about" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group ${
+                  activeSection === 'about' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Over Ons
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'about' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
               <li>
-                <a href="#services" className="relative text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group">
+                <a href="#services" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group ${
+                  activeSection === 'services' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Diensten
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'services' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="relative text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group">
+                <a href="#gallery" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group ${
+                  activeSection === 'gallery' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Portfolio
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'gallery' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="relative text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group">
+                <a href="#testimonials" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group ${
+                  activeSection === 'testimonials' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Recensies
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'testimonials' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
               <li>
-                <a href="#contact" className="relative text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group">
+                <a href="#contact" className={`relative px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50 group ${
+                  activeSection === 'contact' ? 'text-blue-700 font-medium' : 'text-gray-700 hover:text-blue-700'
+                }`}>
                   Contact
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-blue-700 transition-all duration-300 ${
+                    activeSection === 'contact' ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
                 </a>
               </li>
             </ul>
@@ -95,32 +139,56 @@ export function Header() {
       {isMenuOpen && <div className="md:hidden bg-white border-t shadow-lg">
           <ul className="flex flex-col py-2">
             <li>
-              <a href="#home" className="block px-4 py-3 text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700">
+              <a href="#home" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'home' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="block px-4 py-3 text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300">
+              <a href="#about" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'about' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Over Ons
               </a>
             </li>
             <li>
-              <a href="#services" className="block px-4 py-3 text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300">
+              <a href="#services" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'services' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Diensten
               </a>
             </li>
             <li>
-              <a href="#gallery" className="block px-4 py-3 text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300">
+              <a href="#gallery" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'gallery' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Portfolio
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="block px-4 py-3 text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300">
+              <a href="#testimonials" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'testimonials' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Recensies
               </a>
             </li>
             <li>
-              <a href="#contact" className="block px-4 py-3 text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-300">
+              <a href="#contact" className={`block px-4 py-3 transition-all duration-300 ${
+                activeSection === 'contact' 
+                  ? 'text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700' 
+                  : 'text-gray-700 hover:text-blue-700 hover:bg-blue-50'
+              }`}>
                 Contact
               </a>
             </li>
