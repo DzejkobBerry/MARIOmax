@@ -22,7 +22,7 @@ export function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative bg-blue-700 text-white">
+      <section id="home" className="relative bg-blue-700 text-white">
         <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')"
         }}></div>
@@ -216,7 +216,7 @@ export function Home() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+      <section id="gallery" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 -translate-x-48"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 translate-x-32"></div>
@@ -343,7 +343,7 @@ export function Home() {
 
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+      <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 translate-x-48"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 -translate-x-32"></div>

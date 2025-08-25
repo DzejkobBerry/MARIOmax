@@ -46,7 +46,7 @@ export function Header() {
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li>
-                <a href="#" className="relative text-blue-700 font-medium px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50">
+                <a href="#home" className="relative text-blue-700 font-medium px-3 py-2 rounded-md transition-all duration-300 hover:bg-blue-50">
                   Home
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700"></span>
                 </a>
@@ -95,7 +95,7 @@ export function Header() {
       {isMenuOpen && <div className="md:hidden bg-white border-t shadow-lg">
           <ul className="flex flex-col py-2">
             <li>
-              <a href="#" className="block px-4 py-3 text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700">
+              <a href="#home" className="block px-4 py-3 text-blue-700 font-medium bg-blue-50 border-l-4 border-blue-700">
                 Home
               </a>
             </li>
