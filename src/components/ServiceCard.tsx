@@ -21,9 +21,6 @@ export function ServiceCard({
           <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
         </div>
         <p className="text-gray-600">{description}</p>
-        <a href="#contact" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium transition-colors">
-          Meer informatie →
-        </a>
       </div>
     </div>;
 }
