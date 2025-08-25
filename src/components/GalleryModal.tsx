@@ -153,6 +153,7 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
 
 export function GalleryModal({ isOpen, onClose, imageData, category = 'general' }: GalleryModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // Get images for the specific category
   const galleryImages = allGalleryImages[category] || allGalleryImages.general;
@@ -180,6 +181,14 @@ export function GalleryModal({ isOpen, onClose, imageData, category = 'general' 
     setCurrentIndex(index);
   };
 
+  const openFullscreen = () => {
+    setIsFullscreen(true);
+  };
+
+  const closeFullscreen = () => {
+    setIsFullscreen(false);
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-hidden">
@@ -202,7 +211,9 @@ export function GalleryModal({ isOpen, onClose, imageData, category = 'general' 
           <img
             src={currentImage.imageUrl}
             alt={currentImage.title}
-            className="w-full h-96 object-cover"
+            className="w-full h-96 object-cover cursor-pointer hover:opacity-90 transition-opacity"
+            onClick={openFullscreen}
+            title="Kliknij aby otworzyć w pełnym rozmiarze"
           />
           
           {/* Navigation buttons */}
@@ -246,6 +257,45 @@ export function GalleryModal({ isOpen, onClose, imageData, category = 'general' 
           </div>
         </div>
       </div>
+      
+      {/* Fullscreen overlay */}
+      {isFullscreen && (
+        <div className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-[60] p-4">
+          <div className="relative max-w-full max-h-full">
+            <img
+              src={currentImage.imageUrl}
+              alt={currentImage.title}
+              className="max-w-full max-h-full object-contain"
+            />
+            <button
+              onClick={closeFullscreen}
+              className="absolute top-4 right-4 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all text-gray-800"
+            >
+              <X size={24} />
+            </button>
+            
+            {/* Navigation in fullscreen */}
+            <button 
+              onClick={goToPrevious}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button 
+              onClick={goToNext}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all"
+            >
+              <ChevronRight size={24} />
+            </button>
+            
+            {/* Image info in fullscreen */}
+            <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-4 py-2 rounded-lg">
+              <h3 className="font-semibold">{currentImage.title}</h3>
+              <p className="text-sm opacity-90">{currentIndex + 1} z {galleryImages.length}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
