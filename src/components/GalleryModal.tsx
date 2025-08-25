@@ -32,6 +32,18 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
       description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
     }
   ],
+  pvc: [
+    {
+      imageUrl: "/images/pvc-vloeren-terrassen/pvc1.jpg",
+      title: "PVC-vloeren op terrassen",
+      description: "Duurzame PVC-vloeren aangelegd op terrassen, stijlvol en onderhoudsvriendelijk."
+    },
+    {
+      imageUrl: "/images/pvc-vloeren-terrassen/pvc2.jpg",
+      title: "PVC-vloeren op terrassen",
+      description: "Duurzame PVC-vloeren aangelegd op terrassen, stijlvol en onderhoudsvriendelijk."
+    }
+  ],
   houtconstructies: [
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
@@ -75,23 +87,16 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
       title: "Houtconstructies",
       description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
-
-    {
-      imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Badkamer Verbouwing",
-      description: "Luxe badkamer met natuursteen en maatwerk timmerwerk in Amsterdam"
-    },
     {
       imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Ramen & Deuren",
-      description: "Nieuwe kunststof ramen en voordeur installatie in Purmerend"
+      title: "Bouw van bouwunits",
+      description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
       title: "Vensterbanken",
       description: "Natuursteen vensterbanken op maat geplaatst in Haarlem"
-    },
-
+    }
   ]
 };
 

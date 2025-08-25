@@ -55,6 +55,7 @@ export function Home() {
           category={
             selectedImage?.title === 'Houtconstructies' ? 'houtconstructies' :
             selectedImage?.title === 'Isolatie en houtconstructies' ? 'isolatie' :
+            selectedImage?.title === 'PVC-vloeren op terrassen' ? 'pvc' :
             'general'
           }
         />
@@ -269,25 +270,25 @@ export function Home() {
             />
             
             <GalleryCard 
-              imageUrl="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-              title="Badkamer Verbouwing"
-              description="Luxe badkamer met natuursteen en maatwerk timmerwerk in Amsterdam"
+              imageUrl="/images/pvc-vloeren-terrassen/pvc1.jpg"
+              title="PVC-vloeren op terrassen"
+              description="Duurzame PVC-vloeren aangelegd op terrassen, stijlvol en onderhoudsvriendelijk."
               onClick={() => handleImageClick({
-                imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-                title: "Badkamer Verbouwing",
-                description: "Luxe badkamer met natuursteen en maatwerk timmerwerk in Amsterdam"
+                imageUrl: "/images/pvc-vloeren-terrassen/pvc1.jpg",
+                title: "PVC-vloeren op terrassen",
+                description: "Duurzame PVC-vloeren aangelegd op terrassen, stijlvol en onderhoudsvriendelijk."
               })}
             />
             
             {/* Second row */}
             <GalleryCard 
               imageUrl="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-              title="Ramen & Deuren"
-              description="Nieuwe kunststof ramen en voordeur installatie in Purmerend"
+              title="Bouw van bouwunits"
+              description="Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
               onClick={() => handleImageClick({
                 imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-                title: "Ramen & Deuren",
-                description: "Nieuwe kunststof ramen en voordeur installatie in Purmerend"
+                title: "Bouw van bouwunits",
+                description: "Van vloerinstallatie, montage van buitenmuren en dakconstructies, tot isolatie, plafondplaten en montage van scheidingswanden."
               })}
             />
             <GalleryCard 
