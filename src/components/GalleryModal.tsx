@@ -60,8 +60,8 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Maatwerk Kasten",
-      description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
+      title: "Isolatie en houtconstructies",
+      description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
@@ -80,8 +80,8 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-      title: "Maatwerk Kasten",
-      description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
+      title: "Isolatie en houtconstructies",
+      description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
     }
   ]
 };
