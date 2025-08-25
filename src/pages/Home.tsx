@@ -52,6 +52,7 @@ export function Home() {
           isOpen={isModalOpen}
           onClose={closeModal}
           imageData={selectedImage}
+          category={selectedImage?.title === 'Houtconstructies' ? 'houtconstructies' : 'general'}
         />
         
         {/* Scroll to Top Button */}
@@ -242,11 +243,14 @@ export function Home() {
               imageUrl="/images/houtconstructies/houtconstructie1.jpg"
               title="Houtconstructies"
               description="Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
-              onClick={() => handleImageClick({
-                imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
-                title: "Houtconstructies",
-                description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
-              })}
+              onClick={() => {
+                const imageData = {
+                  imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+                  title: "Houtconstructies",
+                  description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+                };
+                handleImageClick(imageData);
+              }}
             />
             
             <GalleryCard 
@@ -318,14 +322,12 @@ export function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => {
-                    const galleryImages = [
-                      {
-                        imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
-                        title: "Houtconstructies",
-                        description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
-                      }
-                    ];
-                    setSelectedImage(galleryImages[0]);
+                    const imageData = {
+                      imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+                      title: "Houtconstructies",
+                      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+                    };
+                    setSelectedImage(imageData);
                     setIsModalOpen(true);
                   }}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors transform hover:scale-105 duration-200"

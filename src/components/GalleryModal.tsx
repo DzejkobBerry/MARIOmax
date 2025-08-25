@@ -11,50 +11,78 @@ interface GalleryModalProps {
   isOpen: boolean;
   onClose: () => void;
   imageData: ImageData | null;
+  category?: string;
 }
 
-const galleryImages: ImageData[] = [
-  {
-    imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
-    title: "Houtconstructies",
-    description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Maatwerk Kasten",
-    description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Badkamer Verbouwing",
-    description: "Luxe badkamer met natuursteen en maatwerk timmerwerk in Amsterdam"
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Ramen & Deuren",
-    description: "Nieuwe kunststof ramen en voordeur installatie in Purmerend"
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Vensterbanken",
-    description: "Natuursteen vensterbanken op maat geplaatst in Haarlem"
-  },
-  {
-    imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Maatwerk Kasten",
-    description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
-  }
-];
+const allGalleryImages: { [key: string]: ImageData[] } = {
+  houtconstructies: [
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+      title: "Houtconstructies",
+      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie2.jpg",
+      title: "Houtconstructies",
+      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie3.jpg",
+      title: "Houtconstructies",
+      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie4.jpg",
+      title: "Houtconstructies",
+      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+    }
+  ],
+  general: [
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+      title: "Houtconstructies",
+      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      title: "Maatwerk Kasten",
+      description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      title: "Badkamer Verbouwing",
+      description: "Luxe badkamer met natuursteen en maatwerk timmerwerk in Amsterdam"
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      title: "Ramen & Deuren",
+      description: "Nieuwe kunststof ramen en voordeur installatie in Purmerend"
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      title: "Vensterbanken",
+      description: "Natuursteen vensterbanken op maat geplaatst in Haarlem"
+    },
+    {
+      imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+      title: "Maatwerk Kasten",
+      description: "Op maat gemaakte inbouwkasten en timmerwerk in Alkmaar"
+    }
+  ]
+};
 
-export function GalleryModal({ isOpen, onClose, imageData }: GalleryModalProps) {
+export function GalleryModal({ isOpen, onClose, imageData, category = 'general' }: GalleryModalProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Get images for the specific category
+  const galleryImages = allGalleryImages[category] || allGalleryImages.general;
 
   useEffect(() => {
     if (imageData) {
       const index = galleryImages.findIndex(img => img.imageUrl === imageData.imageUrl);
       setCurrentIndex(index >= 0 ? index : 0);
     }
-  }, [imageData]);
+  }, [imageData, galleryImages]);
 
   if (!isOpen) return null;
 
