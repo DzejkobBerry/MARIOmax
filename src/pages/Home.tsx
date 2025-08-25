@@ -331,6 +331,8 @@ export function Home() {
         </div>
       </section>
 
+
+
       {/* Testimonials Section */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-white/50"></div>
@@ -462,59 +464,7 @@ export function Home() {
         }} />
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">
-              Onze Diensten
-            </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Bij MARIOmax bieden wij een breed scala aan bouw- en
-              timmerdiensten. Ontdek hieronder wat wij voor u kunnen betekenen.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ServiceCard 
-              title="Algemene Bouwwerkzaamheden" 
-              description="Volledige bouwprojecten van fundament tot dak. Nieuwbouw, uitbreidingen en structurele aanpassingen met vakmanschap en precisie." 
-              icon={<HomeIcon className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-            <ServiceCard 
-              title="Timmerwerk en Schrijnwerk" 
-              description="Professioneel timmerwerk en schrijnwerk. Maatwerk kasten, trappen, lambrisering en alle houten constructies binnen en buiten." 
-              icon={<Hammer className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-            <ServiceCard 
-              title="Ramen & Deuren" 
-              description="Installatie en vervanging van ramen en deuren. Kunststof, hout en aluminium frames voor optimale isolatie en veiligheid." 
-              icon={<PaintBucket className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-            <ServiceCard 
-              title="Ramen & Vensterbanken" 
-              description="Montage van binnen- en buitenvensterbanken. Natuursteen, composiet en houten vensterbanken op maat gemaakt en geïnstalleerd." 
-              icon={<Star className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-            <ServiceCard 
-              title="Kleine Reparaties" 
-              description="Kleine reparaties en onderhoudswerkzaamheden. Van het ophangen van schilderijen tot het repareren van kleine gebreken in huis." 
-              icon={<Hammer className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-            <ServiceCard 
-              title="Panelen & Afwerking" 
-              description="Installatie van wandpanelen, plafondpanelen en decoratieve afwerkingen. Laminaat, PVC en houten panelen voor elke ruimte." 
-              icon={<PaintBucket className="text-blue-600" size={24} />} 
-              imageUrl="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80" 
-            />
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gray-100">
