@@ -242,12 +242,12 @@ export function Home() {
             <GalleryCard 
               imageUrl="/images/houtconstructies/houtconstructie1.jpg"
               title="Houtconstructies"
-              description="Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+              description="Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
               onClick={() => {
                 const imageData = {
                   imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
                   title: "Houtconstructies",
-                  description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+                  description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
                 };
                 handleImageClick(imageData);
               }}
@@ -325,7 +325,7 @@ export function Home() {
                     const imageData = {
                       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
                       title: "Houtconstructies",
-                      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+                      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
                     };
                     setSelectedImage(imageData);
                     setIsModalOpen(true);

@@ -19,29 +19,44 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
       title: "Houtconstructies",
-      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
     {
       imageUrl: "/images/houtconstructies/houtconstructie2.jpg",
       title: "Houtconstructies",
-      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
     {
       imageUrl: "/images/houtconstructies/houtconstructie3.jpg",
       title: "Houtconstructies",
-      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
     {
       imageUrl: "/images/houtconstructies/houtconstructie4.jpg",
       title: "Houtconstructies",
-      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie5.jpg",
+      title: "Houtconstructies",
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie6.jpg",
+      title: "Houtconstructies",
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
+    },
+    {
+      imageUrl: "/images/houtconstructies/houtconstructie7.jpg",
+      title: "Houtconstructies",
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     }
   ],
   general: [
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
       title: "Houtconstructies",
-      description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
     },
     {
       imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
