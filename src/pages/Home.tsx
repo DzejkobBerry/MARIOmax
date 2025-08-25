@@ -239,13 +239,13 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
             {/* First row */}
             <GalleryCard 
-              imageUrl="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-              title="Keuken Renovatie"
-              description="Volledige keukenrenovatie in Zaandam - Modern design met hoogwaardige afwerking"
+              imageUrl="/images/houtconstructies/houtconstructie1.jpg"
+              title="Houtconstructies"
+              description="Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
               onClick={() => handleImageClick({
-                imageUrl: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-                title: "Keuken Renovatie",
-                description: "Volledige keukenrenovatie in Zaandam - Modern design met hoogwaardige afwerking"
+                imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+                title: "Houtconstructies",
+                description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
               })}
             />
             
@@ -320,9 +320,9 @@ export function Home() {
                   onClick={() => {
                     const galleryImages = [
                       {
-                        imageUrl: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-                        title: "Keuken Renovatie",
-                        description: "Volledige keukenrenovatie in Zaandam - Modern design met hoogwaardige afwerking"
+                        imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+                        title: "Houtconstructies",
+                        description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
                       }
                     ];
                     setSelectedImage(galleryImages[0]);

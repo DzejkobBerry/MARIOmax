@@ -15,9 +15,9 @@ interface GalleryModalProps {
 
 const galleryImages: ImageData[] = [
   {
-    imageUrl: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-    title: "Keuken Renovatie",
-    description: "Volledige keukenrenovatie in Zaandam - Modern design met hoogwaardige afwerking"
+    imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
+    title: "Houtconstructies",
+    description: "Deze houtconstructies zijn gemaakt als onderconstructie voor gipsplaten."
   },
   {
     imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
