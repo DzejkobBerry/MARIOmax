@@ -59,6 +59,7 @@ export function Home() {
             selectedImage?.title === 'Bouw van bouwunits' ? 'bouwunits' :
             selectedImage?.title === 'Montage van gevelplanken' ? 'gevelplanken' :
             selectedImage?.title === 'Isolatie en houtconstructies' ? 'isolatie' :
+            selectedImage?.title === 'Alle Foto\'s' ? 'all' :
             'general'
           }
         />
@@ -331,9 +332,9 @@ export function Home() {
                 <button 
                   onClick={() => {
                     const imageData = {
-                      imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
-                      title: "Houtconstructies",
-                      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
+                      imageUrl: "/images/all-photo/all1.jpg",
+                      title: "Alle Foto's",
+                      description: "Bekijk onze volledige collectie van uitgevoerde projecten."
                     };
                     setSelectedImage(imageData);
                     setIsModalOpen(true);

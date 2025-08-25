@@ -142,6 +142,18 @@ const allGalleryImages: { [key: string]: ImageData[] } = {
       description: "Schilderen van muren en ramen, en leggen van vloerpanelen"
     }
   ],
+  all: [
+    {
+      imageUrl: "/images/all-photo/all1.jpg",
+      title: "Alle Foto's",
+      description: "Houtconstructies als onderbouw voor gipsplaten en scheidingswanden."
+    },
+    {
+      imageUrl: "/images/all-photo/all2.jpg",
+      title: "Alle Foto's",
+      description: "Duurzame PVC-vloeren aangelegd op terrassen, stijlvol en onderhoudsvriendelijk."
+    }
+  ],
   general: [
     {
       imageUrl: "/images/houtconstructies/houtconstructie1.jpg",
