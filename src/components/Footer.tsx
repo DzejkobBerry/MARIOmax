@@ -41,6 +41,10 @@ function Footer() {
                 <MapPin size={16} className="mr-2 mt-1 text-blue-400" />
                 <span>Zaandam, Nederland</span>
               </li>
+              <li className="flex items-center">
+                <span className="mr-2 text-blue-400 font-semibold">KvK:</span>
+                <span>77979826</span>
+              </li>
             </ul>
           </div>
           {/* Quick Links */}
