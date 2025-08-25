@@ -153,41 +153,23 @@ export function Home() {
               </div>
             </div>
           </div>
-          
-          {/* Call to Action Banner */}
-          <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-              <div className="absolute inset-0 bg-black/10"></div>
-              <div className="relative z-10">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Klaar om te beginnen?
-                </h3>
-                <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                  Laat uw droomproject werkelijkheid worden met MARIOmax
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="tel:+31618793375" className="bg-white text-blue-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-                    📞 Bel Nu Direct
-                  </a>
-                  <a href="mailto:contact@mariomax.nl" className="bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 border-2 border-white/20">
-                    ✉️ Stuur E-mail
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-800">
-              Onze Diensten
+      <section id="services" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 translate-x-48"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 -translate-x-32"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+              Onze <span className="text-blue-600">Diensten</span>
             </h2>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Bij MARIOmax bieden wij een breed scala aan bouw- en
               timmerdiensten. Ontdek hieronder wat wij voor u kunnen betekenen.
             </p>
@@ -234,14 +216,18 @@ export function Home() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6 text-gray-800 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-              Galerie Onze Werken
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 -translate-x-48"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 translate-x-32"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+              Galerie <span className="text-blue-600">Onze Werken</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto mb-8 rounded-full"></div>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Bekijk onze uitgevoerde projecten en deel uw eigen ervaringen. Upload foto's van uw project en inspireer andere klanten.
             </p>
           </div>
@@ -357,15 +343,18 @@ export function Home() {
 
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/50"></div>
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 translate-x-48"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 -translate-x-32"></div>
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-gray-800 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Wat Onze Klanten Zeggen
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+              Wat Onze <span className="text-blue-600">Klanten Zeggen</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8 rounded-full"></div>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Ontdek waarom meer dan 500+ tevreden klanten voor MARIOmax hebben gekozen.
               Lees hun ervaringen en zie waarom wij de beste keuze zijn voor uw project.
             </p>
@@ -490,23 +479,18 @@ export function Home() {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 relative overflow-hidden">
-        {/* Background decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-blue-300/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-400/20 rounded-full blur-lg animate-bounce delay-500"></div>
-        </div>
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-100 rounded-full opacity-20 -translate-y-48 -translate-x-48"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-200 rounded-full opacity-15 translate-y-32 translate-x-32"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800 relative">
-                Neem Contact Op
-                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full"></div>
-              </h2>
-            </div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+              Neem <span className="text-blue-600">Contact Op</span>
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Heeft u een project in gedachten? Neem vrijblijvend contact met ons op voor een 
               <span className="font-semibold text-blue-700">persoonlijk advies</span> en 
               <span className="font-semibold text-blue-700">offerte op maat</span>.
