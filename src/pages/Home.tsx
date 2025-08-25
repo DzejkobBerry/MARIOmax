@@ -52,7 +52,11 @@ export function Home() {
           isOpen={isModalOpen}
           onClose={closeModal}
           imageData={selectedImage}
-          category={selectedImage?.title === 'Houtconstructies' ? 'houtconstructies' : 'general'}
+          category={
+            selectedImage?.title === 'Houtconstructies' ? 'houtconstructies' :
+            selectedImage?.title === 'Isolatie en houtconstructies' ? 'isolatie' :
+            'general'
+          }
         />
         
         {/* Scroll to Top Button */}
@@ -254,11 +258,11 @@ export function Home() {
             />
             
             <GalleryCard 
-              imageUrl="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+              imageUrl="/images/isolatie-houtconstructies/isolatie1.jpg"
               title="Isolatie en houtconstructies"
               description="Isolatie en houtconstructies voor gevelbekleding met houten planken."
               onClick={() => handleImageClick({
-                imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+                imageUrl: "/images/isolatie-houtconstructies/isolatie1.jpg",
                 title: "Isolatie en houtconstructies",
                 description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
               })}
@@ -297,11 +301,11 @@ export function Home() {
               })}
             />
             <GalleryCard 
-              imageUrl="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+              imageUrl="/images/isolatie-houtconstructies/isolatie1.jpg"
               title="Isolatie en houtconstructies"
               description="Isolatie en houtconstructies voor gevelbekleding met houten planken."
               onClick={() => handleImageClick({
-                imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+                imageUrl: "/images/isolatie-houtconstructies/isolatie1.jpg",
                 title: "Isolatie en houtconstructies",
                 description: "Isolatie en houtconstructies voor gevelbekleding met houten planken."
               })}
