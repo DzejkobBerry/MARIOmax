@@ -238,7 +238,7 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-              Galerie <span className="text-blue-600">Onze Werken</span>
+              Galerijen <span className="text-blue-600">Onze Werken</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
