@@ -59,7 +59,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-blue-700">
-              MARIO<span className="text-gray-700">max</span>
+              MARIO<span className="text-gray-700">MAX</span>
             </div>
           </div>
           {/* Desktop Navigation */}

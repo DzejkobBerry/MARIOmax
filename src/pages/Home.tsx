@@ -77,7 +77,7 @@ export function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-              Over <span className="text-blue-600">MARIOmax</span>
+              Over <span className="text-blue-600">MARIOMAX</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -90,7 +90,7 @@ export function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
               <img 
                 src="/images/other/stolarz.jpg" 
-                alt="MARIOmax vakman aan het werk" 
+                alt="MARIOMAX vakman aan het werk" 
                 className="relative rounded-2xl shadow-2xl w-full h-96 object-cover transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300" 
               />
             </div>
@@ -99,7 +99,7 @@ export function Home() {
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h3 className="text-2xl font-bold mb-4 text-gray-800">Onze Missie</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  MARIOmax is een ervaren bouw- en timmerbedrijf dat kwaliteit, betrouwbaarheid en vakmanschap 
+                  MARIOMAX is een ervaren bouw- en timmerbedrijf dat kwaliteit, betrouwbaarheid en vakmanschap 
                   levert bij elk project. Van kleine renovaties tot grotere bouwprojecten - wij staan garant 
                   voor een professioneel resultaat.
                 </p>
@@ -184,7 +184,7 @@ export function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Bij MARIOmax bieden wij een breed scala aan bouw- en
+              Bij MARIOMAX bieden wij een breed scala aan bouw- en
               timmerdiensten. Ontdek hieronder wat wij voor u kunnen betekenen.
             </p>
           </div>
@@ -370,7 +370,7 @@ export function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Ontdek waarom meer dan 500+ tevreden klanten voor MARIOmax hebben gekozen.
+              Ontdek waarom meer dan 500+ tevreden klanten voor MARIOMAX hebben gekozen.
               Lees hun ervaringen en zie waarom wij de beste keuze zijn voor uw project.
             </p>
           </div>
@@ -392,7 +392,7 @@ export function Home() {
                   name="Maria Jansen" 
                   location="Amsterdam" 
                   rating={5} 
-                  text="MARIOmax heeft onze badkamer volledig gerenoveerd. Het resultaat overtrof onze verwachtingen. Vakmanschap van hoge kwaliteit!" 
+                  text="MARIOMAX heeft onze badkamer volledig gerenoveerd. Het resultaat overtrof onze verwachtingen. Vakmanschap van hoge kwaliteit!" 
                 />
                 <TestimonialCard 
                   name="Peter de Vries" 
@@ -440,7 +440,7 @@ export function Home() {
                   name="Ingrid Smit" 
                   location="Krommenie" 
                   rating={5} 
-                  text="MARIOmax heeft onze verwachtingen overtroffen! Kwaliteit, betrouwbaarheid en vakmanschap in één. Zeer aanbevolen!" 
+                  text="MARIOMAX heeft onze verwachtingen overtroffen! Kwaliteit, betrouwbaarheid en vakmanschap in één. Zeer aanbevolen!" 
                 />
               </div>
             </div>
@@ -595,7 +595,7 @@ export function Home() {
                       }} 
                       allowFullScreen 
                       loading="lazy" 
-                      title="MARIOmax location" 
+                      title="MARIOMAX location" 
                       className="rounded-xl"
                     ></iframe>
                   </div>

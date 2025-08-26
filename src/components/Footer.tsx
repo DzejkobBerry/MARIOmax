@@ -7,7 +7,7 @@ function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              MARIO<span className="text-blue-400">max</span>
+              MARIO<span className="text-blue-400">MAX</span>
             </h3>
             <p className="mb-4">
               Professionele bouw- en timmerwerken voor al uw projecten.
@@ -86,7 +86,7 @@ function Footer() {
         </div>
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} MARIOmax. Alle rechten voorbehouden. | Ontworpen door{' '}
+            &copy; {new Date().getFullYear()} MARIOMAX. Alle rechten voorbehouden. | Ontworpen door{' '}
             <a 
               href="https://bloompixel.pl" 
               target="_blank" 
