@@ -106,7 +106,7 @@ export function Home() {
               </div>
               
               <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Waarom Kiezen Voor Ons?</h3>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Waarom Voor Ons Kiezen?</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Met jarenlange ervaring in de bouwsector bieden wij hoogwaardige diensten aan voor 
                   zowel particuliere als zakelijke klanten in Zaandam en omgeving.
@@ -325,7 +325,7 @@ export function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Bekijk Meer Van Onze Werken</h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Wilt u meer zdjęcia van onze projecten zien? Klik op de knop hieronder om onze volledige galerij te bekijken 
+                Wilt u meer foto's van onze projecten zien? Klik op de knop hieronder om onze volledige galerij te bekijken 
                 en ontdek de kwaliteit en het vakmanschap dat wij leveren bij elk project.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
